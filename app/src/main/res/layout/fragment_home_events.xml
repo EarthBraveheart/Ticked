@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/add_event_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_icon_add_event" />
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="87.17dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_vactor_icon" />
+
+    <TextView
+        android:id="@+id/happening_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/happening_event_text"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+    <ImageView
+        android:id="@+id/example_event_box_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/happening_header"
+        app:srcCompat="@drawable/ic_event_box_not_checked" />
+
+    <TextView
+        android:id="@+id/happening_event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/fira_sans_bold"
+        android:text="IT open house 2019"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/example_event_box_1"
+        app:layout_constraintTop_toTopOf="@+id/example_event_box_1" />
+
+    <TextView
+        android:id="@+id/happening_event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Aug 8, 2019 - Aug 10, 2019"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/example_event_box_1"
+        app:layout_constraintTop_toBottomOf="@+id/happening_event_name" />
+
+    <TextView
+        android:id="@+id/happening_event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="9:00 AM"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/example_event_box_1"
+        app:layout_constraintTop_toBottomOf="@+id/happening_event_date" />
+
+    <TextView
+        android:id="@+id/upcoming_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/upcoming_event_text"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/example_event_box_1" />
+
+    <ImageView
+        android:id="@+id/example_event_box_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upcoming_header"
+        app:srcCompat="@drawable/ic_event_box_not_checked" />
+
+    <TextView
+        android:id="@+id/upcoming_event_nevue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/fira_sans_bold"
+        android:text="Docker for beginners"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/example_event_box_2"
+        app:layout_constraintTop_toTopOf="@+id/example_event_box_2" />
+
+    <TextView
+        android:id="@+id/upcoming_event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Dec 10, 2019"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/example_event_box_2"
+        app:layout_constraintTop_toBottomOf="@+id/upcoming_event_nevue" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="9:00 AM"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/example_event_box_2"
+        app:layout_constraintTop_toBottomOf="@+id/upcoming_event_date" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/check_in_info_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/example_event_box_2" />
+
+    <TextView
+        android:id="@+id/checked_in_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/checked_in_status_text"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/example_event_box_1"
+        app:layout_constraintEnd_toEndOf="@+id/example_event_box_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

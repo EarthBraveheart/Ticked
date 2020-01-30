@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/event_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_event_box_not_checked" />
+
+    <TextView
+        android:id="@+id/event_name_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/fira_sans_bold"
+        android:text="event_name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/event_box"
+        app:layout_constraintTop_toTopOf="@+id/event_box" />
+
+    <TextView
+        android:id="@+id/event_date_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="event_date"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/event_box"
+        app:layout_constraintTop_toBottomOf="@+id/event_name_box" />
+
+    <TextView
+        android:id="@+id/event_time_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:text="event_time"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/event_box"
+        app:layout_constraintTop_toBottomOf="@+id/event_date_box" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/you_are_not_checked_in"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/event_box"
+        app:layout_constraintEnd_toEndOf="@+id/event_box" />
+</androidx.constraintlayout.widget.ConstraintLayout>

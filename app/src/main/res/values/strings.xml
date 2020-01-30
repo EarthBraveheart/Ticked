@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Ticked</string>
+    <string name="no_event_text">No event found.</string>
+    <string name="info_using">When you open a ticket link it will appearhere.\n You can also use the button below to add it manually.</string>
+    <string name="add_event_text">Add an event</string>
+    <string name="event_id">Event id</string>
+    <string name="ticket_id">Ticket id</string>
+    <string name="happening_event_text">Happening</string>
+    <string name="upcoming_event_text">Upcoming</string>
+    <string name="check_in_info_text">Turn on Bluetooth and internet\nconnectivity when you arrive at \nthe venue to automatically check in.</string>
+    <string name="checked_in_status_text">You are checked in!</string>
+    <string name="ticket_type">Ticket type:</string>
+    <string name="you_are_not_checked_in">You are not checked in</string>
+    <string name="venue_text">Venue</string>
+    <string name="address_text">Address</string>
+    <string name="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua|</string>
+    <string name="your_comment_text">Your comment</string>
+    <string name="verification_code_string">Verification code</string>
+</resources>
