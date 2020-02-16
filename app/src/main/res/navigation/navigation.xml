@@ -8,5 +8,18 @@
         android:id="@+id/homeFragment"
         android:name="com.example.ticked.home.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home_events"/>
+        tools:layout="@layout/fragment_home_events">
+        <action
+            android:id="@+id/action_homeFragment_to_addEventFragment"
+            app:destination="@id/addEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEventFragment"
+        android:name="com.example.ticked.addEvent.AddEventFragment"
+        android:label="AddEventFragment"
+        tools:layout="@layout/fragment_add_event">
+        <action
+            android:id="@+id/action_addEventFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
