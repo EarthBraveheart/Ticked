@@ -12,7 +12,6 @@ class EventListAdapter : RecyclerView.Adapter<CustomViewHolder>(){
     override fun getItemCount(): Int {
         return eventNmaeList.size
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
         val layoutInflater = LayoutInflater.from(parent?.context)
         val callForRow = layoutInflater.inflate(R.layout.fragment_item_event_box, parent, false)

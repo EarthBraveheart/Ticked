@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_homeFragment_to_addEventFragment"
             app:destination="@id/addEventFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailEventFragment"
+            app:destination="@id/detailEventFragment" />
     </fragment>
     <fragment
         android:id="@+id/addEventFragment"
@@ -22,4 +25,18 @@
             android:id="@+id/action_addEventFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/detailEventFragment"
+        android:name="com.example.ticked.eventDetail.DetailEventFragment"
+        android:label="DetailEventFragment"
+        tools:layout="@layout/fragment_detail_event_ticket">
+        <action
+            android:id="@+id/action_detailEventFragment_to_commentFragment"
+            app:destination="@id/commentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.example.ticked.comment.CommentFragment"
+        android:label="CommentFragment"
+        tools:layout="@layout/fragment_edit_comment"/>
 </navigation>

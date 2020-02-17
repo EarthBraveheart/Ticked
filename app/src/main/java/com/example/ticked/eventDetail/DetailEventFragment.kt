@@ -30,4 +30,3 @@ class DetailEventFragment : Fragment() {
         return binding.root
         }
     }
-
